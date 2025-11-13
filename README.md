@@ -47,7 +47,7 @@ After having sent the data, assign a variable equal to 'socket.recv()'
 
 #### Example of Receiving
 ```python
-message = socket.recv_json()
+random_value = socket.recv_json()
 ```
 
 ## UML
