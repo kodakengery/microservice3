@@ -60,7 +60,7 @@ Python 3.13
 
 ZeroMQ (pyzmq) — Microservice communication
 
-JSON — Data serialization for player saves
+JSON — Data serialization for requests and responses
 
 ### Author
 
