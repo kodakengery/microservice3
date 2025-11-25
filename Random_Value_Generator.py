@@ -9,7 +9,7 @@ socket.bind("tcp://localhost:5555")
 # Establish loop to receive incoming requests
 while True:
     try:
-        # Error handling for empty JSON requests
+        
         message = socket.recv_json()
         if len(message) == 0:
             reply = {'Error': 'Requests for random number must have content'}
@@ -33,7 +33,7 @@ while True:
                 # Process for returning a random item from a sequence
                 reply = random.choice(message)
 
-    # Error Handling
+    
             except (IndexError, TypeError):
                 reply = {'Error': 'Requests for random number must be valid JSON'}
     except ValueError:
